@@ -2,8 +2,7 @@
 基于主题的情感分析，LSTM，aspect embedding，添加Attention机制
 
 aspect-based sentiment
-analysis 是文本分类的一个子任务。文本分类是 NLP
-的基础任务，旨在对给定文本预测其类别，应用场景广泛，比如垃圾邮件分类，微博情感分类，外卖评论，电影评论分类等。
+analysis 是文本分类的一个子任务
 
 **输入**：一段文本； **输出**：主题-极性，比如：服务-积极（ positive
 ）、味道-消极（ negative ）、价格-中立（ neutral ）
@@ -38,5 +37,19 @@ analysis 是文本分类的一个子任务。文本分类是 NLP
 -   **数据记录和作图，保存在record.ipynb文件中。**
 
 ---
+
+
 <br />
+
+
+### **0 数据集**
+
+**SemEval2014 task4**
+
+数据集主要用于细粒度情感分析，包含“Laptop”和“Restaurant”两个领域。
+
+单条数据集，形式如：{**"sentence"**: "desserts are almost incredible: my
+personal favorite is their tart of the day.", **"aspect"**: "food",
+**"sentiment"**:
+"positive"}，包含文本内容**sentence**、主题**aspect**和情感极性**sentiment**，其中，情感极性分为积极**positive、消极negative**和**中立neutral**三个水平。我们的目标是根据给定主题，来识别句子在该主题下包含的情感极性。
 
